@@ -1,0 +1,37 @@
+{
+    "Standard Starter Template": {
+        "prefix": "sst",
+        "body": [
+            "#include <stdio.h>",
+            "",
+            "int main (int argc, char *argv[]) {",
+            "   return 0;",
+            "}"
+        ],
+        "description": "A standard starter template for a C program"
+    },
+    "Stdlib Variant Starter Template": {
+        "prefix": "libsst",
+        "body": [
+            "#include <stdio.h>",
+            "#include <stdlib.h>",
+            "",
+            "int main (int argc, char *argv[]) {",
+            "   return EXIT_SUCCESS;",
+            "}"
+        ],
+        "description": "A standard starter template for a C program with stdlib included"
+    },
+    "Make linked list": {
+        "prefix": "clist",
+        "body": [
+            "typedef struct _node * Link;",
+            "typedef struct _node node;",
+            "struct _node {",
+            "    int value;",
+            "    Link next;",
+            "};"
+        ],
+        "description": "Creates a linked list template"
+    }
+}
