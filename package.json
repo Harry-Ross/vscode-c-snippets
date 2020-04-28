@@ -2,7 +2,7 @@
 	"name": "c-snippets",
 	"displayName": "C Snippets",
 	"description": "Snippets for the C programming language",
-	"version": "1.1.4",
+	"version": "1.1.5",
 	"license": "MIT",
 	"engines": {
 		"vscode": "^1.44.2"
@@ -17,8 +17,17 @@
 		"Snippets",
 		"Other"
 	],
+	"activationEvents": [
+		"onCommand:extension.helloWorld"
+	],
 	"main": "./out/extension.js",
 	"contributes": {
+		"commands": [
+			{
+				"command": "extension.helloWorld",
+				"title": "Hello world"
+			}
+		],
 		"snippets": [
 			{
 				"language": "c",
