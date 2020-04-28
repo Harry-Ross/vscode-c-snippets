@@ -2,11 +2,11 @@
 	"name": "c-snippets",
 	"displayName": "C Snippets",
 	"description": "Snippets for the C programming language",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"engines": {
 		"vscode": "^1.35.0"
 	},
-	"publisher": "Harry Ross",
+	"publisher": "Harry-Ross-Software",
 	"icon": "c_logo.png",
 	"categories": [
 		"Other"
