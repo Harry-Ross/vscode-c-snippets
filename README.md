@@ -2,6 +2,7 @@
 
 Provides a simple set of Visual Studio Code snippets for the C programming language
 
+![Visual Studio Marketplace Rating (Stars)](https://img.shields.io/visual-studio-marketplace/stars/Harry-Ross-Software.c-snippets)
 ![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/Harry-Ross-Software.c-snippets)
 ![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/Harry-Ross-Software.c-snippets)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/Harry-Ross/vscode-c-snippets)
