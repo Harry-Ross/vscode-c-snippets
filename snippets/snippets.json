@@ -22,7 +22,7 @@
         ],
         "description": "A standard starter template for a C program with stdlib included"
     },
-    "Make linked list": {
+    "Create linked list": {
         "prefix": "clist",
         "body": [
             "typedef struct _node * Link;",
