@@ -2,17 +2,19 @@
 	"name": "c-snippets",
 	"displayName": "C Snippets",
 	"description": "Snippets for the C programming language",
-	"version": "1.1.1",
+	"version": "1.1.2",
+	"license": "MIT",
 	"engines": {
-		"vscode": "^1.35.0"
+		"vscode": "^1.44.2"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Harry-Ross/vscode-c-snippets"
 	},
 	"publisher": "Harry-Ross-Software",
 	"icon": "c_logo.png",
 	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"Snippets"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
