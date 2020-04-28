@@ -33,5 +33,55 @@
             "};"
         ],
         "description": "Creates a linked list template"
+    },
+    "Create int function": {
+        "prefix": "intfunc",
+        "body": [
+            "int $1 () {",
+                "int $0;",
+                "return $0;",
+            "}"
+        ],
+        "description": "Creates a function that returns the int type"
+    },
+    "Create float function": {
+        "prefix": "flfunc",
+        "body": [
+            "float $2 () {",
+                "float $0;",
+                "return $0;",
+            "}"
+        ],
+        "description": "Creates a function that returns the float type"
+    },
+    "Create double function": {
+        "prefix": "doubfunc",
+        "body": [
+            "double $2 () {",
+                "double $0;",
+                "return $0;",
+            "}"
+        ],
+        "description": "Creates a function that returns the double type"
+    },
+    "Create string function": {
+        "prefix": "strfunc",
+        "body": [
+            "char[] $1 () {",
+                "char[] $0 = {}",
+                "return $0;",
+            "}"
+        ],
+        "description": "Creates a function that returns the char array type"
+    },
+    "Create long function": {
+        "prefix": "longfunc",
+        "body": [
+            "long $1 () {",
+                "long $0;",
+                "return $0;",
+            "}"
+        ],
+        "description": "Creates a function that returns the long type"
     }
 }
