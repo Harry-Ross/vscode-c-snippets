@@ -83,5 +83,40 @@
             "}"
         ],
         "description": "Creates a function that returns the long type"
+    },
+    "Print variable of type float": {
+        "prefix": "pflo",
+        "body": [
+            "printf(\"$0 :>> %.2f\\n\", $0);"
+        ],
+        "description": "Calls printf() to log value of variable of type float rounded to 2 decimal places"
+    },
+    "Print variable of type integer": {
+        "prefix": "pint",
+        "body": [
+            "printf(\"$0 :>> %d\\n\", $0);"
+        ],
+        "description": "Calls printf() to log value of variable of type signed integer"
+    },
+    "Print variable of type char": {
+        "prefix": "pcha",
+        "body": [
+            "printf(\"$0 :>> %c\\n\", $0);"
+        ],
+        "description": "Calls printf() to log value of variable of type char"
+    },
+    "Print variable of type pointer": {
+        "prefix": "ppoint",
+        "body": [
+            "printf(\"$0 :>> %p\\n\", (void *) $0);"
+        ],
+        "description": "Calls printf() to log value of variable of type pointer"
+    },
+    "Print variable of type size_t": {
+        "prefix": "psiz",
+        "body": [
+            "printf(\"$0 :>> %zu\\n\", $0);"
+        ],
+        "description": "Calls printf() to log value of variable of type size_t"
     }
 }
