@@ -68,7 +68,7 @@
         "prefix": "strfunc",
         "body": [
             "char[] $1 () {",
-            "   char[] $0 = {}",
+            "   char[] $0 = {};",
             "   return $0;",
             "}"
         ],
