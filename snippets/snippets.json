@@ -84,7 +84,7 @@
         ],
         "description": "Creates a function that returns the long type"
     },
-    "Print variable of type float": {
+    "Print variable of type float (2 decimal places)": {
         "prefix": "pflo",
         "body": [
             "printf(\"$0 :>> %.2f\\n\", $0);"
