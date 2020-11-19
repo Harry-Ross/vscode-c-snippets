@@ -83,5 +83,20 @@
             "}"
         ],
         "description": "Creates a function that returns the long type"
-    }
+    },
+    "Allocate memory using calloc": {
+		"prefix": "cal",
+		"body": [
+			"$1*ptr = ($1*)calloc($2, sizeof($1));",
+			"",
+			"if (ptr == NULL)",
+			"{",
+			"  printf(\"Memory allocation failed!\\n\");",
+			"  exit(0);",
+			"}",
+			"",
+			"free(ptr);"
+	    ],
+		"description": "Allocates memory to a pointer variable using calloc(), then deallocates using free()."
+	}
 }
