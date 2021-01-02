@@ -6,3 +6,13 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## [1.0.0]
 - Initial release
+
+## [1.2.0]
+### Added
+- New set of print snippets
+- Calloc snippet
+
+### Changed
+- Fixed error within existing string function snippet
+- Readme with new snippets and author (Luca Merzetti)
+
