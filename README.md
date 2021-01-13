@@ -1,6 +1,6 @@
 # C Snippets
 
-This extension provides a simple set of VSCode snippets for the C programming language.
+This extension provides a simple set of VSCode snippets for the C programming language. Can be found [here on the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Harry-Ross-Software.c-snippets).
 
 ![Visual Studio Marketplace Rating (Stars)](https://img.shields.io/visual-studio-marketplace/stars/Harry-Ross-Software.c-snippets)
 ![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/Harry-Ross-Software.c-snippets)
