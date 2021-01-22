@@ -1,6 +1,6 @@
 # C Snippets
 
-This extension provides a simple set of VSCode snippets for the C programming language.
+This extension provides a simple set of VSCode snippets for the C programming language. Can be found [here on the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Harry-Ross-Software.c-snippets).
 
 ![Visual Studio Marketplace Rating (Stars)](https://img.shields.io/visual-studio-marketplace/stars/Harry-Ross-Software.c-snippets)
 ![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/Harry-Ross-Software.c-snippets)
@@ -30,6 +30,5 @@ This extension provides a simple set of VSCode snippets for the C programming la
 | Print variable of type size_t    | `psiz`        | <code>printf(\"var_name :>> %zu\\n\", var_name);</code> |
 | Allocate memory using calloc     | `cal`         | <code>{type} *ptr = ({type}*)calloc(, sizeof({type})); <br>if (ptr == NULL) { <br> &nbsp;&nbsp;&nbsp;printf("Memory allocation failed!\n"); <br> &nbsp;&nbsp;&nbsp;exit(0); <br> } <br> free(ptr); </code> |
 
-#### Authors: [Harry Ross](https://github.com/Harry-Ross) and [Luca Merzetti](https://github.com/lucamerzi)
-
 If you would like to support development of the extension donate Bitcoin here: **1BnrjF49owBx7UjMaJt5crZw5DegUYG3mb**
+#### Authors: [Harry Ross](https://github.com/Harry-Ross) and [Luca Merzetti](https://github.com/lucamerzi)
