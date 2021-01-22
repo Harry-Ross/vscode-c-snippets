@@ -16,3 +16,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Fixed error within existing string function snippet
 - Readme with new snippets and author (Luca Merzetti)
 
+## [1.2.1]
+
+### Added
+- BTC Address added to readme for donations
