@@ -22,6 +22,60 @@
         ],
         "description": "A standard starter template for a C program with stdlib included"
     },
+    "If statement": {
+        "prefix": "if",
+        "body": [
+            "if ($0) {",
+            "   /* code here */ ",
+            "}"
+        ],
+        "description": "Creates an if statement"
+    },
+    "Else if statement": {
+        "prefix": "elif",
+        "body": [
+            "else if ($0) {",
+            "   /* code here */ ",
+            "}"
+        ],
+        "description": "Creates an else if statement"
+    },
+    "Else statement": {
+        "prefix": "else",
+        "body": [
+            "else {",
+            "   /* code here */ ",
+            "}"
+        ],
+        "description": "Creates an else statement"
+    },
+    "For loop": {
+        "prefix": "for",
+        "body": [
+            "for (int i = 0; i < $0; i++) {",
+            "   /* code here */ ",
+            "}"
+        ],
+        "description": "Creates a for loop that runs for a certain number if iterations"
+    },
+    "While loop" : {
+        "prefix": "while",
+        "body": [
+            "while ($0) {",
+            "   /* code here */ ",
+            "}"
+        ],
+        "description": "Creates a while loop"
+    },
+    "Do...while loop": {
+        "prefix": "dowhile",
+        "body": [
+            "do {",
+            "   /* code here */ ",
+            "} while($0)"
+        ],
+        "description": "Creates a do...while loop"
+    },
     "Create linked list": {
         "prefix": "clist",
         "body": [

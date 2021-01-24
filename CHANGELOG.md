@@ -20,3 +20,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ### Added
 - BTC Address added to readme for donations
+
+## [1.3.0]
+
+### Added
+- Variety of conditional snippets (if, else if, else) 
+- Variety of loops (while, do...while, for)
