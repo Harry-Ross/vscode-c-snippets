@@ -35,7 +35,7 @@ This extension provides a simple set of VSCode snippets for the C programming la
 | Print variable of type pointer   | `ppoint`      | <code>printf(\"var_name :>> %p\\n\", (void *) var_name);</code> |
 | Print variable of type size_t    | `psiz`        | <code>printf(\"var_name :>> %zu\\n\", var_name);</code> |
 | Allocate memory using calloc     | `cal`         | <code>{type} *ptr = ({type}*)calloc(, sizeof({type})); <br>if (ptr == NULL) { <br> &nbsp;&nbsp;&nbsp;printf("Memory allocation failed!\n"); <br> &nbsp;&nbsp;&nbsp;exit(0); <br> } <br> free(ptr); </code> |
-| Create header include guard      | `hguard`      | <code>#ifndef {guard_name}<br>#define {guard_name}<br><br>// Code for body of header file<br><br>#endif</code> |
+| Create header include guard      | `hguard`      | <code>#ifndef {guard_name} <br> #define {guard_name} <br> <br> // Code for body of header file <br> <br> #endif </code> |
 
 If you would like to support development of the extension donate Bitcoin here: **1BnrjF49owBx7UjMaJt5crZw5DegUYG3mb**
 #### Authors: [Harry Ross](https://github.com/Harry-Ross) and [Luca Merzetti](https://github.com/lucamerzi)
