@@ -187,5 +187,17 @@
             "free(ptr);"
         ],
         "description": "Allocates memory to a pointer variable using calloc(), then deallocates using free()."
+    },
+    "Creates header guard": {
+        "prefix": "hguard",
+        "body": [
+            "#ifndef $1",
+            "#define $1",
+            "",
+            "// Code for body of header file",
+            "",
+            "#endif"
+        ],
+        "description": "Creates include header guard"
     }
 }
