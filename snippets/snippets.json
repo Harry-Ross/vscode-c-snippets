@@ -187,5 +187,17 @@
             "free(ptr);"
         ],
         "description": "Allocates memory to a pointer variable using calloc(), then deallocates using free()."
+    },
+    "Creates a header include guard": {
+        "prefix": "ig",
+        "body": [
+            "#ifndef ${TM_FILENAME/(?:^.*\\\\)?(\\w+)\\W?/${1:/upcase}_/g}",
+            "#define ${TM_FILENAME/(?:^.*\\\\)?(\\w+)\\W?/${1:/upcase}_/g}",
+            "",
+            "// Code for header body",
+            "",
+            "#endif //${TM_FILENAME/(?:^.*\\\\)?(\\w+)\\W?/${1:/upcase}_/g}"
+        ],
+        "description": "Creates header include guard based on file name"
     }
 }
