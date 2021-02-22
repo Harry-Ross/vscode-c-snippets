@@ -29,6 +29,8 @@ This extension provides a simple set of VSCode snippets for the C programming la
 | Create float function            | `flfunc`      | <code>float func_name () {<br>&nbsp;&nbsp;&nbsp;float x;<br>&nbsp;&nbsp;&nbsp;return x;<br>}<code> |
 | Create string function           | `strfunc`     | <code>char[] func_name () {<br>&nbsp;&nbsp;&nbsp;char[] x = {};<br>&nbsp;&nbsp;&nbsp;return x;<br>}<code> |
 | Create long function             | `strfunc`     | <code>long func_name () {<br>&nbsp;&nbsp;&nbsp;long x;<br>&nbsp;&nbsp;&nbsp;return x;<br>}<code> |
+| Create definition for virtual table| `vtdef`     | <code>typedef struct {ClassName}{ <br>    struct {ClassNameVT}* vt; <br>}; <br><br>typedef struct {ClassNameVT} <br>{ <br>    // Virtual Table Function definitions <br>} ${virtualTable Name}; <br><br>int {ClassNameInit}(struct {ClassName} *self); <br>int {ClassNameDestroy}(struct {ClassName} **self);<code> |
+| Create function for virtual table| `vtfunc`     | <code>{ReturnType} (*{FunctionName})(struct {ClassName} *self)<code> |
 | Print statements | | |
 | Print variable of type float (2 decimal places)   | `pflo`        | <code>printf(\"var_name :>> %.2f\\n\", var_name);</code> |
 | Print variable of type int       | `pint`        | <code>printf(\"var_name :>> %d\\n\", var_name);</code> |
