@@ -138,6 +138,31 @@
         ],
         "description": "Creates a function that returns the long type"
     },
+	"Create definition for virtual table": {
+		"prefix": "vtdef",
+		"body": [
+			"typedef struct ${1:ClassName}{",
+			"    struct ${2:$1VT}* vt;    ",
+			"};",
+			"",
+			"typedef struct $2",
+			"{",
+			"    // Virtual Table Function definitions",
+			"} ${3:vt$1};",
+			"",
+			"",
+			"int $1Init(struct $1 *self);",
+			"int $1Destroy(struct $1 **self);"
+		],
+		"description": "Create definition for virtual table"
+	},
+	"Create function for virtual table": {
+		"prefix": "vtfunc",
+		"body": [
+			"${1:void} (*${2:functionName})(struct ${3:ClassName} *self)"
+		],
+		"description": "Create function for virtual table"
+	}
     "Print variable of type float (2 decimal places)": {
         "prefix": "pflo",
         "body": [
@@ -187,5 +212,17 @@
             "free(ptr);"
         ],
         "description": "Allocates memory to a pointer variable using calloc(), then deallocates using free()."
+    },
+    "Creates a header include guard": {
+        "prefix": "ig",
+        "body": [
+            "#ifndef ${TM_FILENAME/(?:^.*\\\\)?(\\w+)\\W?/${1:/upcase}_/g}",
+            "#define ${TM_FILENAME/(?:^.*\\\\)?(\\w+)\\W?/${1:/upcase}_/g}",
+            "",
+            "// Code for header body",
+            "",
+            "#endif //${TM_FILENAME/(?:^.*\\\\)?(\\w+)\\W?/${1:/upcase}_/g}"
+        ],
+        "description": "Creates header include guard based on file name"
     }
 }
