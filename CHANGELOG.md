@@ -26,3 +26,7 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Added
 - Variety of conditional snippets (if, else if, else) 
 - Variety of loops (while, do...while, for)
+
+## [1.3.1]
+### Added
+- Header include guards & virtual table definitions
