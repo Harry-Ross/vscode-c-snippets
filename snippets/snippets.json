@@ -162,7 +162,7 @@
 			"${1:void} (*${2:functionName})(struct ${3:ClassName} *self)"
 		],
 		"description": "Create function for virtual table"
-	}
+	},
     "Print variable of type float (2 decimal places)": {
         "prefix": "pflo",
         "body": [
