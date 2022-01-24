@@ -30,3 +30,8 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [1.3.1]
 ### Added
 - Header include guards & virtual table definitions
+
+## [1.3.2]
+
+### Changed
+- Fixed bug with the list of snippets
