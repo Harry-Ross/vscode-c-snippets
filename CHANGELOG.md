@@ -32,6 +32,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 - Header include guards & virtual table definitions
 
 ## [1.3.2]
-
 ### Changed
 - Fixed bug with the list of snippets
+
+
+## [1.3.3]
+### Changed
+- Updated tab length to 4 spaces for greater consistency across snippets
