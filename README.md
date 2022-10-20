@@ -23,7 +23,7 @@ This extension provides a simple set of VSCode snippets for the C programming la
 | Do...while loop | `dowhile` | <code>do {<br>&nbsp;&nbsp;&nbsp;/* code here */<br>} while (expression)</code> | 
 | Header file include guard        | `ig`          | <code>#ifndef {transformed_file_name} <br>#define {transformed_file_name} <br><br> // Code for header body <br><br>#endif {transformed_file_name}</code> |
 | Linked lists | | |
-| Linked list template             | `libsst`      | <code>typedef struct _node * Link;<br>typedef struct _node node;<br>struct _node {<br>&nbsp;&nbsp;&nbsp;int value;<br>&nbsp;&nbsp;&nbsp;Link next;<br>};<code> |
+| Linked list template             | `clist`      | <code>typedef struct _node * Link;<br>typedef struct _node node;<br>struct _node {<br>&nbsp;&nbsp;&nbsp;int value;<br>&nbsp;&nbsp;&nbsp;Link next;<br>};<code> |
 | Functions | | |
 | Create int function              | `intfunc`     | <code>int func_name () {<br>&nbsp;&nbsp;&nbsp;int x;<br>&nbsp;&nbsp;&nbsp;return x;<br>}<code> |
 | Create float function            | `flfunc`      | <code>float func_name () {<br>&nbsp;&nbsp;&nbsp;float x;<br>&nbsp;&nbsp;&nbsp;return x;<br>}<code> |
