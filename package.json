@@ -22,12 +22,6 @@
 	],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [
-			{
-				"command": "extension.helloWorld",
-				"title": "Hello world"
-			}
-		],
 		"snippets": [
 			{
 				"language": "c",
@@ -36,17 +30,29 @@
 		]
 	},
 	"scripts": {
-		"vscode:prepublish": "npm run compile",
+		"vscode:prepublish": "npm run esbuild-base -- --minify",
 		"compile": "tsc -p ./",
 		"watch": "tsc -watch -p ./",
-		"postinstall": "node ./node_modules/vscode/bin/install",
-		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+    "esbuild-base": "esbuild ./src/extension.ts --bundle --outfile=out/main.js --external:vscode --format=cjs --platform=node",
+    "esbuild": "npm run esbuild-base -- --sourcemap",
+    "esbuild-watch": "npm run esbuild-base -- --sourcemap --watch",
+    "test-compile": "tsc -p ./",
+		"test": "vscode-test",
+		"lint": "eslint -c .eslintrc.js --ext .ts src"
 	},
 	"devDependencies": {
 		"@types/mocha": "^2.2.42",
 		"@types/node": "^10.17.49",
+		"@typescript-eslint/eslint-plugin": "^6.9.1",
+		"@typescript-eslint/parser": "^6.9.1",
+		"@vscode/test-cli": "^0.0.4",
+		"@vscode/test-electron": "^2.3.6",
+		"esbuild": "^0.19.5",
+		"eslint": "^8.53.0",
 		"tslint": "^5.20.1",
-		"typescript": "^3.9.7",
-		"vscode": "^1.1.37"
+		"typescript": "^5.2.2"
+	},
+	"dependencies": {
+		"@types/vscode": "^1.84.0"
 	}
 }
